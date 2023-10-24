@@ -20,12 +20,12 @@ def resend_invitation_email(
 
     invitation_brain = get_brain_details(brain_subscription.brain_id)
     if invitation_brain is None:
-        raise Exception("Brain not found")
+        raise Exception("Cerebro no encontrado")
     brain_name = invitation_brain.name
 
     html_body = f"""
-    <p>Brain {brain_name} has been shared with you by {inviter_email}.</p>
-    <p><a href='{brain_url}'>Click here</a> to access your brain.</p>
+    <p>El cerebro {brain_name} ha sido compartido contigo por {inviter_email}.</p>
+    <p><a href='{brain_url}'>Click aquí</a> para acceder al cerebro</p>
     """
 
     try:
@@ -33,7 +33,7 @@ def resend_invitation_email(
             {
                 "from": brains_settings.resend_email_address,
                 "to": brain_subscription.email,
-                "subject": "Quivr - Brain Shared With You",
+                "subject": "Arandu - Cerebro compartido contigo",
                 "html": html_body,
             }
         )

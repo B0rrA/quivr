@@ -31,6 +31,7 @@ export const App = ({ children }: PropsWithChildren): JSX.Element => {
 
   return (
     <QueryClientProvider client={queryClient}>
+      <UpdateMetadata />
       <NavBar />
       {children}
       <Footer />

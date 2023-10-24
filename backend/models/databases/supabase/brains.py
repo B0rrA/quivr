@@ -10,8 +10,8 @@ logger = get_logger(__name__)
 
 
 class CreateBrainProperties(BaseModel):
-    name: Optional[str] = "Default brain"
-    description: Optional[str] = "This is a description"
+    name: Optional[str] = "Mi cerebro"
+    description: Optional[str] = "Esto es una descripción de mi cerebro"
     status: Optional[str] = "private"
     model: Optional[str]
     temperature: Optional[float] = 0.0

@@ -64,13 +64,6 @@ const Main = (): JSX.Element => {
 
               <Link href="/signup">{t("signup", { ns: "login" })}</Link>
             </div>
-
-            <Divider text={t("or")} />
-            <div className="flex flex-col items-center justify-center mt-2 gap-2">
-              <GoogleLoginButton />
-            </div>
-            <Divider text={t("or")} />
-            <MagicLinkLogin email={email} setEmail={setEmail} />
           </form>
         </Card>
       </section>

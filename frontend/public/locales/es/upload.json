@@ -6,7 +6,7 @@
     "uploadFailed": "Error al subir archivo: {{message}}",
     "invalidUrl": "URL inválido",
     "maxSizeError": "Tamaño de archivo excedido",
-    "missingNecessaryRole": "No tienes el rol necesario para cargar contenido en el cerebro seleccionado. 🧠💡🥲",
+    "missingNecessaryRole": "No tienes el rol necesario para cargar contenido al cerebro seleccionado. 🧠💡🥲",
     "ohNo": "¡Oh no!",
     "selectBrain": "Por favor, seleccione o cree un cerebro antes de subir un archivo",
     "selectBrainFirst": "Primero debes seleccionar un cerebro. 🧠💡🥲",

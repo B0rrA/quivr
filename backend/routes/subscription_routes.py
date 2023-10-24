@@ -80,7 +80,7 @@ def invite_users_to_brain(
             if should_send_invitation_email:
                 resend_invitation_email(
                     subscription,
-                    inviter_email=current_user.email or "Quivr",
+                    inviter_email=current_user.email or "Arandu",
                     origin=origin,
                 )
         except Exception as e:
