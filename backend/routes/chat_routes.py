@@ -326,13 +326,12 @@ async def create_stream_question_handler(
         chat_question.max_tokens = chat_question.max_tokens or brain.max_tokens or 256
 
     try:
-        logger.info(f"Streaming request for {chat_question.model}")
         check_user_requests_limit(current_user)
         gpt_answer_generator: HeadlessQA | OpenAIBrainPicking
         # TODO check if model is in the list of models available for the user
 
-        print(userSettings.get("models", ["gpt-3.5-turbo"]))  # type: ignore
-        is_model_ok = (brain_details or chat_question).model in userSettings.get("models", ["gpt-3.5-turbo"])  # type: ignore
+        is_model_ok = (brain_details or chat_question).model in userSettings.get("models", ["gpt-3.5-turbo","gpt-4"])  # type: ignore
+        logger.info(f"Streaming request for {(brain_details or chat_question).model if is_model_ok else 'gpt-3.5-turbo'}") 
 
         if brain_id:
             gpt_answer_generator = OpenAIBrainPicking(
