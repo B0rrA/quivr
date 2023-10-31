@@ -5,7 +5,6 @@ import { useSupabase } from "@/lib/context/SupabaseProvider";
 import { cn } from "@/lib/utils";
 
 import { AuthButtons } from "./components/AuthButtons";
-import { NavLink } from "./components/NavLink";
 
 interface NavItemsProps extends HTMLAttributes<HTMLUListElement> {
   setOpen?: Dispatch<SetStateAction<boolean>>;

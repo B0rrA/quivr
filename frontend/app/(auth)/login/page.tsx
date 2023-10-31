@@ -5,12 +5,9 @@ import { useTranslation } from "react-i18next";
 
 import Button from "@/lib/components/ui/Button";
 import Card from "@/lib/components/ui/Card";
-import { Divider } from "@/lib/components/ui/Divider";
 import Field from "@/lib/components/ui/Field";
 import PageHeading from "@/lib/components/ui/PageHeading";
 
-import { GoogleLoginButton } from "./components/GoogleLogin";
-import { MagicLinkLogin } from "./components/MagicLinkLogin";
 import { PasswordForgotten } from "./components/PasswordForgotten";
 import { useLogin } from "./hooks/useLogin";
 
